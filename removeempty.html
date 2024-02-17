@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        div{
+            background-color: plum;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>this is paragraph
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo harum ratione distinctio laboriosa
+</p>
+    </div>
+    <button id="btn1">remove div </button>
+    <button id="btn2">empty div</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("div").remove()
+        });
+        $("#btn2").click(function(){
+            $("div").empty()
+        });
+    })
+</script>
+</html>

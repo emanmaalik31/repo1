@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p class="my-paragraph">this is a new paragraph</p>
+    <button id="change-text-button">change text</button>
+    <button id="my-button">check alert</button>
+    <p class="my-para">hello world</p>
+    <img src="./flowers.jfif"alt="" class="mypic">
+</body>
+<script>
+    $(document).ready(function(){
+        $("#change-text-button").click(function(){
+            $(".my-paragraph").text("text changed");
+        })
+    })
+    $("#my-button").click(function(){
+        alert("button clicked")
+    })
+    $(".my-para").text("new text entered")
+
+    $(document).ready (function(){
+        $(".mypic").fadeOut(5000);
+        $(".mypic").fadeIn(5000)
+    })
+</script>
+</html>

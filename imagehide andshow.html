@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #s1,#s2,#s3{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <label><input type="checkbox" name="" id="check1"> shirts</label><br>
+        <label><input type="checkbox" name="" id="check2"> bags</label><br>
+        <label><input type="checkbox" name="" id="check3"> shoes</label><br>
+
+    </div>
+    <div id="s1">
+        <img class="img-thumbnail" src="">
+        <img class="img-thumbnail" src="">
+        <img class="img-thumbnail" src="">
+    </div>
+    <div id="s2">
+        <img class="img-thumbnail" src="">
+        <img class="img-thumbnail" src="">
+        <img class="img-thumbnail" src="">
+    </div>
+    <div id="s3">
+        <img class="img-thumbnail" src="">
+        <img class="img-thumbnail" src="">
+        <img class="img-thumbnail" src="">
+    </div>
+
+</body>
+<script>
+    $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+         if($('#check1').is(':checked'))
+         {
+            $('#s1').show();
+
+         }
+         else{
+            $('#s1').hide();
+
+         }
+        });
+        });
+        $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+         if($('#check2').is(':checked'))
+         {
+            $('#s2').show();
+
+         }
+         else{
+            $('#s2').hide();
+
+         }
+        });
+        });
+        $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+         if($('#check3').is(':checked'))
+         {
+            $('#s3').show();
+
+         }
+         else{
+            $('#s3').hide();
+
+         }
+        });
+        });
+</script>
+</html>
